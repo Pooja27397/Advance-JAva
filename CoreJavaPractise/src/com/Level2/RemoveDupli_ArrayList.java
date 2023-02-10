@@ -1,0 +1,23 @@
+package com.Level2;
+
+import java.util.ArrayList;
+import java.util.List;
+//Same we can use for Integer values..
+public class RemoveDupli_ArrayList {
+public static void main(String[] args) {
+	List<String> list=new ArrayList<String>();
+	  list.add("Mumbai");
+	  list.add("Pune");
+	  list.add("Hyderabad");
+	  list.add("Mumbai");
+	  list.add("Banglore");
+	  list.add("Pune");
+	  list.add("Nashik");
+	  //Remove Duplicate from arraylist
+	  for(int i=0;i<list.size();i++) {
+	    list.remove("Mumbai");
+	    list.remove("Pune");
+}
+  System.out.println("New ArrayList is::"+list);			  
+}
+}

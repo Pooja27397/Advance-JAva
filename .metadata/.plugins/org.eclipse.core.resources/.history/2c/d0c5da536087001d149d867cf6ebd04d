@@ -1,0 +1,15 @@
+package com.Revision;
+
+public class FibonacciSimple {
+public static void main(String[] args) {
+	int a=0;
+	int b=1;
+	int num=7;
+	for(int i=1;i<=num;i++) {
+		System.out.println(a+"");
+		int t=a;
+		a=a+b;
+		b=t;
+	}
+}
+}

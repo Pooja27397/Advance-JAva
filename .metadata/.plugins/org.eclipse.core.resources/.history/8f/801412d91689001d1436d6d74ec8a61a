@@ -1,0 +1,12 @@
+package com.Level2;
+
+public class BallonSort {
+	/*
+	 * Suppose I have one container that contain different colors of ballons .Such
+	 * as Red, Blue,Green,Red,Blue,red,Blue,green in this order, now sort that
+	 * ballons is such manners so red balloon at added first then blue &lasr is
+	 * green balloon ,use proper colection.
+	 */
+     public static void main(String[] args) {
+    	 LinkedList<>
+     }

@@ -1,0 +1,31 @@
+package com.Level2;
+
+public class PalindromeString {
+	public static void main(String[] args) {
+
+  String str="nitin";
+  String rev="";    //In double codes not give space if you give space then output reverse.
+    for(int i=str.length()-1;i>=0;i--) {
+    	 rev=rev+str.charAt(i);
+    }
+	
+       if(str.equals(rev))
+       {
+    	   System.out.println(" Palindrome String");
+    	   
+       } else {
+    	   System.out.println(" Not palindrome String");
+       }
+    }
+}
+
+
+
+
+ 
+
+
+
+
+
+     

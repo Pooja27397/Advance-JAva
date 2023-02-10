@@ -1,0 +1,59 @@
+package com.Level2;
+
+import java.util.Scanner;
+
+/* 1..Design a method for counting the alphabet, vowels, & numbers from String.
+ * Input should be from user into main method& pass that to methods. And result
+ * will print into main method.
+ */
+//Declaring the static variables for counting the alphabet,vowels & numbers
+
+
+public class CountingString1 {
+	
+private int countAlphabet;
+private int countVowels;
+private int countNumbers;
+//  Method for counting alphabets
+public int getAlphabetCount(String inputData) {
+	for(int i=0;i<inputData.length();i++) {
+		if(inputData.charAt(i)<='Z' && inputData.charAt(i)>='A'
+	|| inputData.charAt(i)<='z' && inputData.charAt(i)>='a')
+		countAlphabet++;
+	}
+		return countAlphabet;
+	} 
+	
+	public int getVowelsCount(String inputData) {
+		for(int i=0;i<inputData.length();i++) {
+			if(inputData.charAt(i)=='a' || inputData.charAt(i)=='e' || inputData.charAt(i)=='i'
+			|| inputData.charAt(i)=='o' || inputData.charAt(i)=='u' || inputData.charAt(i)=='A'
+			 || inputData.charAt(i)=='E' || inputData.charAt(i)=='I' || inputData.charAt(i)=='O'
+			           || inputData.charAt(i)=='U')
+				countVowels++;
+		}
+	    return countVowels;
+	    
+	} 
+	public int getNumbersCount(String inputData) {
+		for(int i=0;i<inputData.length();i++) {
+			if(inputData.charAt(i)<='9' || inputData.charAt(i)>='0')
+				countNumbers++;
+		}
+		return countNumbers;
+	}
+	public static void main(String[] args) {
+		CountingString1 countString=new CountingString1();
+		
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter input String");
+		String inputData=sc.nextLine();
+		
+		
+		System.out.println("Alphabet count in input String"+countString.getAlphabetCount(inputData));
+		System.out.println("Vowels count in input String"+countString.getVowelsCount(inputData));
+		System.out.println("Numbers count in input String"+countString.getNumbersCount(inputData));
+		
+		
+		}
+	}

@@ -1,0 +1,13 @@
+package com.interwiew.code;
+
+public class ReverseString {
+public static void main(String[] args) {
+	String inputData="Hello Good Morning";
+	String reverse="";
+	int size=inputData.length();
+	for(int i=0;i<size-1;i--) {
+		reverse=reverse+inputData.charAt(i);
+		
+	}
+}
+}

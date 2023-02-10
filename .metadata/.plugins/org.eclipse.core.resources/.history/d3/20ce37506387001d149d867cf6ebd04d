@@ -1,0 +1,14 @@
+package com.Revision;
+
+public class FactoriaSimple {
+public static void getFactorial(int num) {
+	int fact=1;
+	for(int i=1;i<=num;i++) {
+		fact=fact*i;
+		System.out.println("Factorial of num is"+fact);
+				
+	}
+	System.out.println("Enter a number");
+	
+}
+}

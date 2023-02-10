@@ -1,0 +1,25 @@
+package com.Revision;
+
+import java.util.Scanner;
+
+public class FactorOfNumber {
+	public static void getFactNum(int num) {
+		
+              int a=1;
+             while(a<=num) {
+            	 if(a%num==0) {
+            		 System.out.println(
+            		 
+            	 }
+            	 a++;
+             }
+	}
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter a number");
+		int fact=sc.nextInt();
+		getFactNum(fact);
+		
+	}
+}
+

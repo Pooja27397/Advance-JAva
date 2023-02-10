@@ -1,0 +1,17 @@
+package com.Revision;
+//write the program for mult,div,sub.etc same as addition.
+
+public class Addition {
+public static int  getAddNumber(int number) {
+	return number;
+	
+}
+public static void main(String[] args) {
+	int a=20;
+	int b=30;
+	Addition add=new Addition();
+	System.out.println("Addition of two numbers::"+add.getAddNumber(a+b));    
+	
+	   
+}
+}

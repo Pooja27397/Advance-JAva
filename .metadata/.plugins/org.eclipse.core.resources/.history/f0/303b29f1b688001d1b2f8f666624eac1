@@ -1,0 +1,16 @@
+package com.Revision;
+
+import java.util.Scanner;
+
+public class Revise {
+	public static void main(String[] args) {
+int a=1;
+ int num=60;
+ while(a<=num) {
+	 if(num%a==0) {
+		 System.out.println("Factor of number is"+a);
+	 } 
+	 a++;
+ }
+	}
+ }

@@ -1,0 +1,31 @@
+package com.Revision;
+
+public class SwapNumber {
+public static void main(String[] args) {
+	int a=10;
+	int b=20;
+	//Before swapping
+	System.out.println("before swapping");
+	System.out.println("a= "+a+" b= "+b);
+	
+	//After swapping
+	int t = a;
+	 a=b;
+	 b=t;
+	 System.out.println("After swapping");
+	 System.out.println("a="+a+"b="+b);
+	
+	
+}
+------------------------------------------------------------
+//Without third variable
+
+int a1=10;
+int b1=20;
+a=a+b1;
+b1=a-b1;
+a=a-b1;
+System.out.println("a1="+a1);
+System.out.println("b1="+b1);
+}
+}

@@ -1,0 +1,7 @@
+package com.Revision;
+
+import java.util.Scanner;
+
+public class Revise {
+  public static void getFactNum(int num) {
+  

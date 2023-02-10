@@ -1,0 +1,15 @@
+package com.Level2;
+/* 1..Design a method for counting the alphabet, vowels, & numbers from String.
+ * Input should be from user into main method& pass that to methods. And result
+ * will print into main method.
+ */
+//Declaring the static variables for counting the alphabet,vowels & numbers
+
+
+public class CountingString1 {
+	
+private int countAlphabet;
+private int countVowels;
+private int countNumbers;
+//  Method for counting alphabets
+public int getAlphaberNum()

@@ -1,0 +1,51 @@
+package com.Level2;
+
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.util.Scanner;
+
+public class CountVowelsAndNumFromFile {
+	/*
+	 * Write a java program for counting the vowels nd numbers from file(abc.txt).
+	 */
+	 
+
+	 public static void main(String[] args) {
+	 	int vowelcount=0;
+	 	int numbercount=0;
+	 	try {
+	 		// Creating object of FileInputStream to get data from Demo.txt
+	 		FileInputStream fileinputstream= new FileInputStream("C:\\Users\\tushar patil\\Desktop\\pooja.txt");
+	 		   //Creating scanner class object & passing the FileInputStream object to
+	 		       //Scanner for scanning data
+	 		Scanner scanner=new Scanner(fileinputstream);
+	 		while(scanner.hasNextLine()) {
+	 		   //Run the loop till next line is present in the given file
+	 		String s=scanner.nextLine();  //Storing each line of the string into s variable
+	 		for(int i=0;i<s.length();i++) {
+	 			//Running this loop till characters exists in the string
+	 		char ch=s.charAt(i);  //Storing each character of string as per Index i
+	 		if(ch==65 || ch==69 || ch==73 || ch==79 || ch==85 || ch==97 || ch==97 || ch==101 || ch==105 || ch==111 || ch==117){
+	 			 //  checking the vowels using ASCII values
+	 			vowelcount++;
+	 			  //If character in a string is vowel then this will increase by one everytime
+	 		}
+	 		    if(ch>=48 && ch<=57) {
+	 		    	//to check if character in a string is number 
+	 		    	 numbercount++;  
+	 		    	 //If character in a string is number then this will in crease by one everytime
+	 		        }
+	 		    	 
+	 		    }
+	 	}
+	 			
+	 			
+	 		System.out.println("Total number of vowels in file are>>"+vowelcount);
+	 	System.out.println("Total number of Numbers in file are>>"+numbercount);
+	 	    scanner.close();
+	 } catch (IOException e) {
+	 	System.out.println(e);
+	       }
+	     }
+	 }
+}

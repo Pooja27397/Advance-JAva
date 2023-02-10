@@ -1,0 +1,19 @@
+package com.Revision;
+
+import java.util.Scanner;
+
+public class Revise {
+  public static void getFactNum(int num) {
+	  System.out.println("Duplicate elements are");
+  
+  int a[] = {10,30,40,50,20,50,60,30,80};
+  int size=a.length;
+  for(int i=0;i<size;i++) {
+	  for(int j=1+i;j<size;j++) {
+		  if(a[i]==a[j]) {
+			  System.out.println(a[i]);
+		  }
+	  }
+  }
+}
+}
